@@ -3141,9 +3141,12 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
+
     color: #fff;
-    background-color: #1f275b;
-    border-color: #1f275b
+    background: linear-gradient(135deg, #1f275b, #3946d4);
+    border: none;
+
+
 }
 
 .btn-primary:hover {
