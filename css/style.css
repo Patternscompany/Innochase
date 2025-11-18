@@ -84,7 +84,14 @@ h6,
     top: -150px;
     transition: .5s;
 }
-
+    .hero-header .btn-light{
+background-color:#1f275b !important;
+color:white !important;
+    }
+    .navbar .btn-light{
+background-color:#1f275b !important;
+color:white !important;
+    }
 .navbar {
     padding: 11px 0 !important;
     height: 75px;
