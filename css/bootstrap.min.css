@@ -3141,9 +3141,8 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
-
-    color: #fff;
-    background: linear-gradient(135deg, #1f275b, #3946d4);
+ color: #fff;
+    background: linear-gradient(135deg, #1f275b, #6a5af9);
     border: none;
 
 
