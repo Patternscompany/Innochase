@@ -142,7 +142,9 @@ h6,
     }
 }
 
-
+.logo-img{
+    width:150px;
+}
 /*** Hero Header ***/
 .hero-header {
     margin-top: -75px;
