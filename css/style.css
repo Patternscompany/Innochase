@@ -350,8 +350,9 @@ color:white !important;
 
 /*** Footer ***/
 .footer {
-    background: url(../img/footer.png) center center no-repeat;
+    background: url(../img/images/foot1.jpg) center center no-repeat;
     background-size: contain;
+    height: auto;
 }
 
 .footer .btn.btn-social {
@@ -361,7 +362,8 @@ color:white !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(255,255,255,.5);
+    /* color: rgba(255,255,255,.5); */
+    color:#fffefe;
     border: 1px solid rgba(256, 256, 256, .1);
     border-radius: 40px;
     transition: .3s;
@@ -376,13 +378,14 @@ color:white !important;
     margin-bottom: 10px;
     padding: 0;
     text-align: left;
-    color: rgba(255,255,255,.5);
+    /* color: rgba(255,255,255,.5); */
+    color: #e8e3e3;
     font-weight: normal;
     transition: .3s;
 }
 
 .footer .btn.btn-link:hover {
-    color: #FFFFFF;
+    color: #fffefe;
 }
 
 .footer .btn.btn-link::before {
@@ -405,17 +408,19 @@ color:white !important;
 }
 
 .footer .copyright a {
-    color: rgba(255,255,255,.5);
+    /* color: rgba(255,255,255,.5); */
+    color:#fffefe;
 }
 
 .footer .copyright a:hover {
-    color: #FFFFFF;
+    color: #fffefe;
 }
 
 .footer .footer-menu a {
     margin-right: 15px;
     padding-right: 15px;
-    border-right: 1px solid rgba(255, 255, 255, .1);
+    /* border-right: 1px solid rgba(255, 255, 255, .1); */
+    border-right: 1px solid #fffefe;
 }
 
 .footer .footer-menu a:last-child {
