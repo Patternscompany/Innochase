@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #1363C6;
+    --primary: #1f275b;
     --secondary: #15ACE1;
     --light: #F4F7FE;
     --dark: #14183E;
@@ -84,7 +84,14 @@ h6,
     top: -150px;
     transition: .5s;
 }
-
+    .hero-header .btn-light{
+background-color:#1f275b !important;
+color:white !important;
+    }
+    .navbar .btn-light{
+background-color:#1f275b !important;
+color:white !important;
+    }
 .navbar {
     padding: 11px 0 !important;
     height: 75px;
@@ -93,13 +100,13 @@ h6,
 .navbar .navbar-nav .nav-link {
     margin-right: 35px;
     padding: 0;
-    color: rgba(255, 255, 255, .7);
+    color: #000000;
     outline: none;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: rgba(255, 255, 255, 1);
+    color:#0d914c;
 }
 
 .navbar .dropdown-toggle::after {
@@ -120,6 +127,7 @@ h6,
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
         padding: 10px 0;
+        color:white;
     }
 }
 
