@@ -356,6 +356,66 @@ color:white !important;
     height: auto;
     z-index: 0;           /* bottom layer */
 }
+/*** Testimonial ***/
+.testimonial-carousel {
+    position: relative;
+}
+
+.testimonial-carousel .owl-nav {
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    top: calc(50% - 50px);
+    left: -21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    margin: 5px 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    background: #FFFFFF;
+    border: 1px solid var(--primary);
+    border-radius: 40px;
+    font-size: 18px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    background: var(--primary);
+    color: #FFFFFF;
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 35px;
+    margin-left: 3rem;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #FFFFFF;
+    border: 1px solid var(--primary);
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    width: 30px;
+    background: var(--primary);
+}
+
 
 .footer::before {
     position: absolute;
