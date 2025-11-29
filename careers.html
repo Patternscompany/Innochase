@@ -31,6 +31,457 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
+<style>
+/* Career Page Styles */
+.career-wrapper {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f7f9ff 0%, #e8f2ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.career-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="%230d6efd" opacity="0.1"/><circle cx="80" cy="80" r="2" fill="%230d6efd" opacity="0.1"/><circle cx="50" cy="50" r="1" fill="%230d6efd" opacity="0.1"/></svg>') repeat;
+    pointer-events: none;
+}
+
+.career-card {
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1), 0 0 20px rgba(13, 110, 253, 0.1);
+    margin-bottom: 30px;
+    border: 1px solid rgba(13, 110, 253, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.career-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(13, 110, 253, 0.1), transparent);
+    transition: left 0.6s;
+}
+
+.career-card:hover::before {
+    left: 100%;
+}
+
+.career-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.15), 0 0 30px rgba(13, 110, 253, 0.2);
+}
+
+.career-title {
+    font-weight: 700;
+    background: linear-gradient(135deg, #0d2a4f 0%, #0d6efd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+    position: relative;
+}
+
+.career-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
+    border-radius: 2px;
+}
+
+.career-sub {
+    font-size: 16px;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.career-img {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease;
+}
+
+.career-img:hover {
+    transform: scale(1.05);
+}
+
+.benefits {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits li {
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 10px;
+    border-left: 4px solid #0d6efd;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefits li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(13, 110, 253, 0.1), transparent);
+    transition: left 0.4s;
+}
+
+.benefits li:hover::before {
+    left: 100%;
+}
+
+.benefits li:hover {
+    transform: translateX(10px);
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+}
+
+.job-card {
+    padding: 25px;
+    border-left: 5px solid #0d6efd;
+    background: linear-gradient(135deg, #f2f6ff 0%, #e3f2fd 100%);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.job-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 30%, rgba(13, 110, 253, 0.05) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.job-card:hover::before {
+    transform: translateX(100%);
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(13, 110, 253, 0.15);
+}
+
+.job-card h5 {
+    color: #0d2a4f;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.job-card p {
+    color: #6c757d;
+    margin: 0;
+}
+
+.apply-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.apply-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.apply-btn:hover::before {
+    left: 100%;
+}
+
+.apply-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(13, 110, 253, 0.4);
+    background: linear-gradient(135deg, #6610f2 0%, #0d6efd 100%);
+}
+
+.apply-btn:active {
+    transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .career-wrapper {
+        padding: 40px 0;
+    }
+
+    .career-card {
+        padding: 25px;
+        margin-bottom: 20px;
+    }
+
+    .career-title {
+        font-size: 1.8rem;
+    }
+
+    .career-img {
+        max-height: 250px;
+        margin-top: 20px;
+    }
+
+    .benefits li {
+        margin-bottom: 10px;
+        padding: 10px 15px;
+    }
+
+    .job-card {
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .apply-btn {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .career-card {
+        padding: 20px;
+    }
+
+    .career-title {
+        font-size: 1.5rem;
+    }
+
+    .benefits li {
+        font-size: 14px;
+    }
+
+    .job-card {
+        padding: 15px;
+    }
+}
+
+/* Animation Classes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.career-card {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.career-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.career-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.career-card:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(13, 110, 253, 0.1);
+    background: linear-gradient(135deg, #f7f9ff 0%, #e8f2ff 100%);
+    border-radius: 20px 20px 0 0;
+    padding: 20px 30px;
+}
+
+.modal-title {
+    font-weight: 700;
+    background: linear-gradient(135deg, #0d2a4f 0%, #0d6efd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.5rem;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #0d2a4f;
+    margin-bottom: 8px;
+}
+
+.form-control, .form-select {
+    border: 2px solid rgba(13, 110, 253, 0.1);
+    border-radius: 10px;
+    padding: 12px 16px;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+    background: #ffffff;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+    opacity: 0.7;
+}
+
+.form-text {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 4px;
+}
+
+.form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.form-check-label {
+    color: #495057;
+    font-size: 0.9rem;
+}
+
+.form-check-label a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.form-check-label a:hover {
+    text-decoration: underline;
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(13, 110, 253, 0.1);
+    padding: 20px 30px;
+    background: linear-gradient(135deg, #f7f9ff 0%, #e8f2ff 100%);
+    border-radius: 0 0 20px 20px;
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #495057 0%, #6c757d 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 117, 125, 0.3);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #6610f2 0%, #0d6efd 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(13, 110, 253, 0.4);
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .modal-dialog {
+        margin: 10px;
+    }
+
+    .modal-content {
+        border-radius: 15px;
+    }
+
+    .modal-header, .modal-footer {
+        padding: 15px 20px;
+    }
+
+    .modal-body {
+        padding: 20px;
+    }
+
+    .modal-title {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-dialog {
+        margin: 5px;
+    }
+
+    .modal-header, .modal-body, .modal-footer {
+        padding: 15px;
+    }
+
+    .btn-secondary, .btn-primary {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+</style>
+
+
 <body>
     <!-- Spinner Start -->
     <div id="spinner"
@@ -64,10 +515,10 @@
         <a href="digital-marketing.html" class="dropdown-item">Digital Marketing</a>
     </div>
 </div>
-<a href="about.html" class="nav-item nav-link active">Who We Are</a>
+<a href="about.html" class="nav-item nav-link">Who We Are</a>
 <a href="WhatWethink.html" class="nav-item nav-link">What we think</a>
 <a href="aboutkns.html" class="nav-item nav-link">About KNS</a>
-<a href="careers.html" class="nav-item nav-link">Careers</a>
+<a href="careers.html" class="nav-item nav-link active">Careers</a>
 <a href="blog.html" class="nav-item nav-link">Blog</a>
 <!-- <a href="project.html" class="nav-item nav-link">Our Work</a> -->
 <a href="contact.html" class="nav-item nav-link">Contact us</a>
@@ -95,18 +546,19 @@ background-color: white !important;
         <div class="container pt-5">
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">Who We Are</h1>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Careers at Innochase</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
                             <li class="breadcrumb-item"><a class="text-white" href="#">
-                                We are a team of experienced professionals who have come together to provide innovative solutions in the field of AI and Machine Learning.
+                                Join a team of innovators shaping the future with Artificial Intelligence and Machine Learning.
+
                                    
                             </a></li>
                         </ol>
                     </nav>
                 </div>
                 <div class="col-lg-6 align-self-end text-center text-lg-end">
-                    <img class="img-fluid" src="img/images/aboutabout.png" alt="" style="max-height: 300px;">
+                    <img class="img-fluid" src="img/career.png" alt="" style="max-height: 300px;">
                 </div>
             </div>
         </div>
@@ -114,108 +566,102 @@ background-color: white !important;
     <!-- Hero End -->
 
 
-    <!-- About Start -->
-   <div class="container-fluid py-5">
-    <div class="container">
-        <div class="row g-5 align-items-center">
+   
+<div class="container career-wrapper">
 
-            <!-- About Image -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                <div class="about-img">
-                    <img class="img-fluid" src="img/images/aboutabout1.png" alt="About Innochase">
-                </div>
-            </div>
+    <!-- Intro Section -->
+    <div class="row career-card align-items-center">
+        <div class="col-lg-6">
+            <h2 class="career-title">Who We Are</h2>
+            <p class="career-sub">
+                We are a team of skilled professionals delivering innovative solutions in Artificial Intelligence and Machine Learning.
+            </p>
+            <p>
+                At Innochase, our culture is built on learning, innovation, and empathy. We empower our people
+                to grow professionally, explore new ideas, and develop technologies that matter.
+            </p>
+            <p>
+                If you are passionate about futuristic technologies and meaningful impact, your journey begins here.
+            </p>
+        </div>
 
-            <!-- About Content -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div>
-                <h1 class="mb-4">Powering Businesses Through AI, Cyber Security & Digital Innovation</h1>
-
-                <p class="mb-4">
-                    At Innochase, we help businesses unlock the real value of technology through Artificial Intelligence, 
-                    Cyber Security, and Digital Marketing. Our goal is to empower companies with smart, secure, and scalable 
-                    digital solutions that accelerate growth and ensure long-term success.
-                </p>
-
-                <p class="mb-4">
-                    Whether you’re a startup or an established enterprise, we bring together cutting-edge technology and expert 
-                    strategy to deliver high-impact results. Our solutions are tailored to your goals, ensuring improved efficiency, 
-                    enhanced security, and stronger digital presence.
-                </p>
-
-                <div class="row g-3">
-                    <div class="col-sm-6">
-                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>AI & ML Expertise</h6>
-                        <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Cyber Security Specialists</h6>
-                    </div>
-                    <div class="col-sm-6">
-                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Digital Marketing Excellence</h6>
-                        <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>24/7 Support & Assistance</h6>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mission Section -->
-            <div class="col-md-12 mt-5">
-                <h2 class="mb-4">Our Mission</h2>
-                <p>
-                    Our mission is to enable businesses to grow confidently in a fast-changing digital world. We do this by 
-                    delivering AI solutions that simplify operations, Cyber Security tools that protect your digital assets,
-                    and Digital Marketing strategies that maximize your online reach.
-                </p>
-
-                <p>
-                    We are committed to building smart, secure, and future-ready solutions that help companies innovate, 
-                    scale, and stay ahead of competition.
-                </p>
-
-                <p>
-                    Every project we deliver is designed to improve efficiency, strengthen security, and create meaningful 
-                    digital impact for our clients.
-                </p>
-
-                <!-- Values Section -->
-                <h2 class="mt-5 mb-4">Our Values</h2>
-                <p>
-                    At Innochase, our values guide everything we build and deliver. They reflect who we are and what we 
-                    stand for as a technology partner.
-                </p>
-
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Innovation – We bring creative and modern solutions through AI and digital technology.</li>
-                    <li class="list-group-item">Security – We prioritize protection and privacy through strong Cyber Security practices.</li>
-                    <li class="list-group-item">Growth – We help businesses grow through effective Digital Marketing strategies.</li>
-                    <li class="list-group-item">Expertise – Our team includes skilled professionals in AI, Cyber Security, and Marketing.</li>
-                    <li class="list-group-item">Integrity – We believe in honesty, transparency, and long-term partnerships.</li>
-                </ul>
-
-                <!-- Additional Content -->
-                <p class="mt-4">
-                    With AI and Machine Learning, we help businesses automate tasks, analyze data, and improve decision-making.
-                    With Cyber Security, we ensure that your systems and data remain safe from threats and cyberattacks. 
-                    Through Digital Marketing, we build powerful online presence and help brands connect with the right audience.
-                </p>
-
-                <p>
-                    Our end-to-end support ensures that every solution is implemented smoothly and delivers value over time. 
-                    We work closely with you to understand your goals and design technology that fits your needs perfectly.
-                </p>
-
-                <p>
-                    From small startups to enterprise companies, we are committed to empowering organizations through intelligent 
-                    and secure digital transformation.
-                </p>
-
-                <p>
-                    At Innochase, we don’t just build technology—we build long-lasting growth and success for your business.
-                </p>
-            </div>
-
+        <div class="col-lg-6">
+            <img src="img/careerabout.png" alt="Careers at Innochase" class="career-img">
         </div>
     </div>
+
+    <!-- Why Join -->
+    <div class="career-card">
+        <h2 class="career-title">Why Join Innochase?</h2>
+        <ul class="benefits">
+            <li>🚀 Exposure to real AI & ML projects</li>
+            <li>📚 Continuous learning & career development</li>
+            <li>🤝 Collaborative & inclusive culture</li>
+            <li>🌍 Global working environment</li>
+            <li>💡 Innovation-driven workspace</li>
+        </ul>
+    </div>
+
+    <!-- Open Positions -->
+    <div class="career-card">
+        <h2 class="career-title">Current Openings</h2>
+
+        <div class="job-card">
+            <h5>AI / ML Engineer</h5>
+            <p><strong>Experience:</strong> 2-5 years in AI/ML development</p>
+            <p><strong>Requirements:</strong> Proficiency in Python, TensorFlow/PyTorch, scikit-learn, and data analysis. Experience with cloud platforms (AWS/Azure) and version control (Git).</p>
+            <p><strong>Responsibilities:</strong> Develop and deploy machine learning models, collaborate with data scientists, optimize algorithms for performance, and contribute to AI-driven solutions.</p>
+            <div class="text-center">
+                <button class="apply-btn" onclick="openApplyModal('AI / ML Engineer')">Apply Now</button>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <h5>Cyber Security Analyst</h5>
+            <p><strong>Experience:</strong> 3-6 years in cybersecurity</p>
+            <p><strong>Requirements:</strong> Knowledge of network security, firewalls, intrusion detection systems, and compliance standards (ISO 27001, NIST). Certifications like CISSP or CEH preferred.</p>
+            <p><strong>Responsibilities:</strong> Monitor security threats, conduct vulnerability assessments, implement security measures, and respond to incidents to protect organizational assets.</p>
+            <div class="text-center">
+                <button class="apply-btn" onclick="openApplyModal('Cyber Security Analyst')">Apply Now</button>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <h5>Frontend Developer</h5>
+            <p><strong>Experience:</strong> 2-4 years in frontend development</p>
+            <p><strong>Requirements:</strong> Strong skills in HTML5, CSS3, JavaScript, React.js, and responsive design. Experience with version control and UI/UX principles.</p>
+            <p><strong>Responsibilities:</strong> Build user-friendly interfaces, optimize web performance, collaborate with designers, and ensure cross-browser compatibility.</p>
+            <div class="text-center">
+                <button class="apply-btn" onclick="openApplyModal('Frontend Developer')">Apply Now</button>
+            </div>
+        </div>
+
+        <div class="job-card">
+            <h5>Digital Marketing Specialist</h5>
+            <p><strong>Experience:</strong> 2-5 years in digital marketing</p>
+            <p><strong>Requirements:</strong> Expertise in SEO, SEM, social media marketing, Google Analytics, and content creation. Experience with marketing automation tools.</p>
+            <p><strong>Responsibilities:</strong> Develop marketing strategies, manage campaigns, analyze performance metrics, and drive online growth for clients.</p>
+            <div class="text-center">
+                <button class="apply-btn" onclick="openApplyModal('Digital Marketing Specialist')">Apply Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Apply Section -->
+    <div class="career-card text-center">
+        <h2 class="career-title">Ready to Build Your Future?</h2>
+        <p>
+            Send your resume and portfolio to  
+            <strong>careers@innochase.com</strong>
+        </p>
+
+        <a href="mailto:careers@innochase.com" class="apply-btn">Apply Now</a>
+    </div>
+
 </div>
 
-    <!-- About End -->
+
+
 
 
     <!-- Footer Start -->
@@ -313,6 +759,99 @@ background-color: white !important;
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Apply Modal -->
+    <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="applyModalLabel">Apply for <span id="jobTitle"></span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="applyForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name *</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name *</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="resume" class="form-label">Resume/CV *</label>
+                            <input type="file" class="form-control" id="resume" accept=".pdf,.doc,.docx" required>
+                            <div class="form-text">Accepted formats: PDF, DOC, DOCX. Max size: 5MB</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="coverLetter" class="form-label">Cover Letter</label>
+                            <textarea class="form-control" id="coverLetter" rows="4" placeholder="Tell us why you're interested in this position..."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="experience" class="form-label">Years of Experience</label>
+                            <select class="form-control" id="experience">
+                                <option value="">Select experience level</option>
+                                <option value="0-1">0-1 years</option>
+                                <option value="1-3">1-3 years</option>
+                                <option value="3-5">3-5 years</option>
+                                <option value="5-10">5-10 years</option>
+                                <option value="10+">10+ years</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                            <label class="form-check-label" for="termsCheck">
+                                I agree to the <a href="#" target="_blank">Terms & Conditions</a> and <a href="#" target="_blank">Privacy Policy</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="submitApplication()">Submit Application</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openApplyModal(jobTitle) {
+            document.getElementById('jobTitle').textContent = jobTitle;
+            new bootstrap.Modal(document.getElementById('applyModal')).show();
+        }
+
+        function submitApplication() {
+            const form = document.getElementById('applyForm');
+            if (form.checkValidity()) {
+                // Here you would typically send the form data to your server
+                // For now, we'll just show a success message
+                alert('Thank you for your application! We will review your submission and get back to you soon.');
+                bootstrap.Modal.getInstance(document.getElementById('applyModal')).hide();
+                form.reset();
+            } else {
+                form.reportValidity();
+            }
+        }
+
+        // File size validation
+        document.getElementById('resume').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file && file.size > 5 * 1024 * 1024) { // 5MB
+                alert('File size must be less than 5MB');
+                e.target.value = '';
+            }
+        });
+    </script>
 </body>
 
 </html>
