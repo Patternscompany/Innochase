@@ -32,95 +32,182 @@
 
     <style>
 .inno-wrapper {
-    padding: 60px 0;
-    background: #f8f9fc;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fc 0%, #e9ecef 100%);
+    min-height: 100vh;
 }
 
 .inno-section {
     background: #ffffff;
-    padding: 35px;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-    margin-bottom: 30px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inno-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
 .inno-title {
-    font-size: 28px;
+    font-size: 32px;
     color: #0d2a4f;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     position: relative;
+    line-height: 1.2;
 }
 
 .inno-title::after {
     content: '';
-    width: 70px;
-    height: 3px;
-    background: #0d6efd;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
     position: absolute;
     left: 0;
-    bottom: -8px;
+    bottom: -10px;
+    border-radius: 2px;
 }
 
 .inno-subtitle {
     font-weight: 600;
     color: #0d6efd;
-    margin-top: 25px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 18px;
 }
 
 .inno-pillar {
-    padding: 18px;
-    border-left: 4px solid #0d6efd;
-    border-radius: 8px;
-    background: #f3f7ff;
-    margin-bottom: 15px;
+    padding: 20px;
+    border-left: 5px solid #0d6efd;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f3f7ff 0%, #e7f3ff 100%);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.inno-pillar:hover {
+    background: linear-gradient(135deg, #e7f3ff 0%, #d1e7ff 100%);
+    transform: translateX(5px);
+}
+
+.inno-pillar h5 {
+    color: #0d2a4f;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.inno-pillar p {
+    color: #555;
+    margin: 0;
 }
 
 .inno-img {
     width: 100%;
-    border-radius: 12px;
-    margin-top: 15px;
+    border-radius: 16px;
+    margin-top: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
 .highlight {
-    font-weight: 500;
-    color: #333;
+    font-weight: 600;
+    color: #0d2a4f;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .training-box {
     text-align: center;
-    padding: 25px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #0d6efd, #083f97);
+    padding: 30px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
     color: white;
+    box-shadow: 0 10px 30px rgba(13, 110, 253, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.training-box:hover {
+    transform: scale(1.05);
 }
 
 .training-box h3 {
     color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .training-box p {
     color: #dbe7ff;
+    font-size: 16px;
+    margin: 0;
 }
-
-
 
 /* Team Image Size Control */
 .team-img {
-    max-height: 420px;
+    max-height: 450px;
     width: 100%;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    margin: 20px 0;
 }
 
 /* White Frame Layer Same as About Image */
 .about-img {
     background: #ffffff;
-    padding: 15px;
-    border-radius: 14px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
 }
 
+.about-img:hover {
+    transform: translateY(-5px);
+}
+
+.about-img img {
+    border-radius: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .inno-wrapper {
+        padding: 40px 0;
+    }
+
+    .inno-section {
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+
+    .inno-title {
+        font-size: 24px;
+    }
+
+    .training-box {
+        padding: 20px;
+    }
+
+    .team-img {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .inno-section {
+        padding: 20px;
+    }
+
+    .inno-title {
+        font-size: 20px;
+    }
+
+    .inno-pillar {
+        padding: 15px;
+    }
+}
 </style>
 
 </head>
