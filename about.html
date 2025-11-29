@@ -29,6 +29,100 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+.inno-wrapper {
+    padding: 60px 0;
+    background: #f8f9fc;
+}
+
+.inno-section {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    margin-bottom: 30px;
+}
+
+.inno-title {
+    font-size: 28px;
+    color: #0d2a4f;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.inno-title::after {
+    content: '';
+    width: 70px;
+    height: 3px;
+    background: #0d6efd;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+.inno-subtitle {
+    font-weight: 600;
+    color: #0d6efd;
+    margin-top: 25px;
+}
+
+.inno-pillar {
+    padding: 18px;
+    border-left: 4px solid #0d6efd;
+    border-radius: 8px;
+    background: #f3f7ff;
+    margin-bottom: 15px;
+}
+
+.inno-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.highlight {
+    font-weight: 500;
+    color: #333;
+}
+
+.training-box {
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0d6efd, #083f97);
+    color: white;
+}
+
+.training-box h3 {
+    color: #fff;
+}
+
+.training-box p {
+    color: #dbe7ff;
+}
+
+
+
+/* Team Image Size Control */
+.team-img {
+    max-height: 420px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* White Frame Layer Same as About Image */
+.about-img {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+</style>
+
 </head>
 
 <body>
@@ -114,110 +208,144 @@ background-color: white !important;
     <!-- Hero End -->
 
 
-    <!-- About Start -->
-   <div class="container-fluid py-5">
-    <div class="container">
-        <div class="row g-5 align-items-center">
+   
+    <div class="container inno-wrapper">
 
-            <!-- About Image -->
+<!-- Intro -->
+<div class="row inno-section align-items-center">
+    <div class="col-lg-6">
+        <h2 class="inno-title">Innovating With Purpose</h2>
+        <p class="highlight">
+            At Innochase, we are a forward-thinking technology company driven by innovation, integrity, and intelligence.
+        </p>
+        <p>
+            We combine deep industry expertise with cutting-edge technologies such as Artificial Intelligence, Cloud,
+            Cybersecurity, and Automation to help organizations navigate digital transformation with confidence.
+        </p>
+        <p>
+            Our multidisciplinary teams collaborate globally to deliver solutions that are efficient, secure, ethical,
+            and sustainable — turning complexity into clarity.
+        </p>
+    </div>
+    <!-- <div class="col-lg-6"> -->
+        <!-- <img src="img/innovation.jpg" class="inno-img" alt="Innochase Innovation"> -->
+    <!-- </div> -->
+     <!-- About Image -->
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                 <div class="about-img">
                     <img class="img-fluid" src="img/images/aboutabout1.png" alt="About Innochase">
                 </div>
             </div>
+</div>
 
-            <!-- About Content -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div>
-                <h1 class="mb-4">Powering Businesses Through AI, Cyber Security & Digital Innovation</h1>
+<!-- AI Defense -->
+<div class="inno-section">
+    <h2 class="inno-title">The 5 Pillars of AI Defense</h2>
+    <p>
+        As Artificial Intelligence and robotic systems become embedded in enterprise operations, trust and security are foundational.
+        At Innochase (or KSN Technologies), we design intelligent ecosystems that perform and protect.
+    </p>
 
-                <p class="mb-4">
-                    At Innochase, we help businesses unlock the real value of technology through Artificial Intelligence, 
-                    Cyber Security, and Digital Marketing. Our goal is to empower companies with smart, secure, and scalable 
-                    digital solutions that accelerate growth and ensure long-term success.
-                </p>
+    <div class="inno-pillar">
+        <h5>1. Data Security and Integrity</h5>
+        <p>We safeguard AI data pipelines with encryption, validation, secure versioning, and protection against data poisoning.</p>
+    </div>
 
-                <p class="mb-4">
-                    Whether you’re a startup or an established enterprise, we bring together cutting-edge technology and expert 
-                    strategy to deliver high-impact results. Our solutions are tailored to your goals, ensuring improved efficiency, 
-                    enhanced security, and stronger digital presence.
-                </p>
+    <div class="inno-pillar">
+        <h5>2. Model Security and Adversarial Robustness</h5>
+        <p>Adversarial defense mechanisms and containerized models prevent theft, inversion, and manipulation attacks.</p>
+    </div>
 
-                <div class="row g-3">
-                    <div class="col-sm-6">
-                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>AI & ML Expertise</h6>
-                        <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Cyber Security Specialists</h6>
-                    </div>
-                    <div class="col-sm-6">
-                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Digital Marketing Excellence</h6>
-                        <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>24/7 Support & Assistance</h6>
-                    </div>
-                </div>
-            </div>
+    <div class="inno-pillar">
+        <h5>3. Access Control and Identity Management</h5>
+        <p>Zero Trust enforcement and behavioral analytics ensure secure identity management across systems and AI agents.</p>
+    </div>
 
-            <!-- Mission Section -->
-            <div class="col-md-12 mt-5">
-                <h2 class="mb-4">Our Mission</h2>
-                <p>
-                    Our mission is to enable businesses to grow confidently in a fast-changing digital world. We do this by 
-                    delivering AI solutions that simplify operations, Cyber Security tools that protect your digital assets,
-                    and Digital Marketing strategies that maximize your online reach.
-                </p>
+    <div class="inno-pillar">
+        <h5>4. Ethical Governance and Explainability</h5>
+        <p>Audit-ready compliance frameworks and XAI allow AI decisions to be transparent, fair, and traceable.</p>
+    </div>
 
-                <p>
-                    We are committed to building smart, secure, and future-ready solutions that help companies innovate, 
-                    scale, and stay ahead of competition.
-                </p>
-
-                <p>
-                    Every project we deliver is designed to improve efficiency, strengthen security, and create meaningful 
-                    digital impact for our clients.
-                </p>
-
-                <!-- Values Section -->
-                <h2 class="mt-5 mb-4">Our Values</h2>
-                <p>
-                    At Innochase, our values guide everything we build and deliver. They reflect who we are and what we 
-                    stand for as a technology partner.
-                </p>
-
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Innovation – We bring creative and modern solutions through AI and digital technology.</li>
-                    <li class="list-group-item">Security – We prioritize protection and privacy through strong Cyber Security practices.</li>
-                    <li class="list-group-item">Growth – We help businesses grow through effective Digital Marketing strategies.</li>
-                    <li class="list-group-item">Expertise – Our team includes skilled professionals in AI, Cyber Security, and Marketing.</li>
-                    <li class="list-group-item">Integrity – We believe in honesty, transparency, and long-term partnerships.</li>
-                </ul>
-
-                <!-- Additional Content -->
-                <p class="mt-4">
-                    With AI and Machine Learning, we help businesses automate tasks, analyze data, and improve decision-making.
-                    With Cyber Security, we ensure that your systems and data remain safe from threats and cyberattacks. 
-                    Through Digital Marketing, we build powerful online presence and help brands connect with the right audience.
-                </p>
-
-                <p>
-                    Our end-to-end support ensures that every solution is implemented smoothly and delivers value over time. 
-                    We work closely with you to understand your goals and design technology that fits your needs perfectly.
-                </p>
-
-                <p>
-                    From small startups to enterprise companies, we are committed to empowering organizations through intelligent 
-                    and secure digital transformation.
-                </p>
-
-                <p>
-                    At Innochase, we don’t just build technology—we build long-lasting growth and success for your business.
-                </p>
-            </div>
-
-        </div>
+    <div class="inno-pillar">
+        <h5>5. Continuous Monitoring and Autonomous Defense</h5>
+        <p>Self-healing systems embedded with real-time threat intelligence and anomaly detection.</p>
     </div>
 </div>
 
-    <!-- About End -->
+<!-- Why It Matters -->
+<div class="inno-section">
+    <h2 class="inno-title">Why It Matters</h2>
+    <p>
+        AI-driven enterprises are shaping the future — but innovation must remain secure.
+        Our framework enables companies to build intelligent systems with ethics, resilience, and confidence.
+    </p>
+</div>
+
+<!-- About Us -->
+<div class="inno-section">
+    <h2 class="inno-title">About Us – Innovating With Purpose</h2>
+    <p>
+        Founded on excellence through innovation, Innochase helps organizations harness AI, Cloud,
+        Cybersecurity, and Automation to build sustainable digital ecosystems.
+    </p>
+
+    <h5 class="inno-subtitle">Driven by Expertise & Collaboration</h5>
+    <p>
+        Our team of engineers, strategists, and data scientists work closely with startups,
+        enterprises, and governments to achieve real-world results.
+    </p>
+
+   
+    <img src="img/knsteam.jpeg" class="img-fluid team-img" alt="Innochase Team">
 
 
+
+    <h5 class="inno-subtitle">Building the Future Responsibly</h5>
+    <p>
+        We prioritize ethical technology with trust, transparency, and governance at every layer.
+        Together we create not just automation — but human progress.
+    </p>
+</div>
+
+<!-- Mission Vision -->
+<div class="row inno-section">
+    <div class="col-md-6">
+        <h2 class="inno-title">Our Mission</h2>
+        <p>
+            To empower organizations with intelligent, ethical, and scalable AI solutions that transform
+            data into decisions.
+        </p>
+    </div>
+
+    <div class="col-md-6">
+        <h2 class="inno-title">Our Vision</h2>
+        <p>
+            To be a global leader in AI innovation and human-centered automation.
+        </p>
+    </div>
+</div>
+
+<!-- Promise -->
+<div class="inno-section">
+    <h2 class="inno-title">Our Promise</h2>
+    <p>
+        We go beyond technology — designing intelligence that serves humanity.
+    </p>
+</div>
+
+<!-- Training -->
+<div class="training-box">
+    <h3>Training Program</h3>
+    <p>Artificial Intelligence Training Program</p>
+</div>
+
+</div>
+
+
+
+
+
+    
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5">
     <div class="container py-5">
