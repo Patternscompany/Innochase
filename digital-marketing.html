@@ -30,7 +30,56 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+<style>
+    /* Digital Marketing Services Section */
+.dm-services {
+    background: #ffffff;
+    padding: 60px 0;
+    border-radius: 12px;
+}
 
+.dm-service-card {
+    text-align: center;
+    background: #f9fbff;
+    border-radius: 12px;
+    padding: 25px;
+    height: 100%;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.dm-service-card:hover {
+    transform: translateY(-5px);
+}
+
+.dm-service-icon {
+    font-size: 40px;
+    color: #0d6efd;
+    margin-bottom: 12px;
+}
+
+.dm-service-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.dm-service-text {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+/* Increase height only on desktop */
+@media (min-width: 992px) {
+    .desktop-image {
+        height: 500px;     /* change value as needed */
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+</style>
 <body>
     <!-- Spinner Start -->
     <div id="spinner"
@@ -87,6 +136,11 @@
         .navv{
 background-color: white !important;
         }
+        @media (min-width: 992px) {
+            .desktop-image {
+                height: 400px;
+            }
+        }
     </style>
 
     <!-- Hero Start -->
@@ -94,12 +148,12 @@ background-color: white !important;
         <div class="container pt-5">
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">Digital Marketing</h1>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Digital Marketing Reinvented with AI</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
-                            
+
                             <li class="breadcrumb-item text-white active" aria-current="page">
-                                Elevate your brand with data-driven digital marketing strategies that engage audiences and drive growth.
+                                Transforming Digital Presence with Intelligence and Impact
 </li>
                         </ol>
                     </nav>
@@ -119,11 +173,15 @@ background-color: white !important;
         <div class="row g-5 align-items-center">
             <div class="col-lg-12">
                 <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Services</div>
-                <h1 class="mb-4">Digital Marketing Solutions That Accelerate Your Business Growth</h1>
+                <h1 class="mb-4">Digital Marketing Reinvented with AI</h1>
                 <p class="mb-4">
-                    At Innochase, we help brands grow faster with data-driven digital marketing strategies designed 
-                    to increase visibility, generate leads, and boost conversions. Our smart and scalable marketing solutions 
-                    empower businesses to build a strong online presence and stay ahead of competition.
+                    At KSN Technologies, we blend creativity, data, and artificial intelligence to help brands thrive in the digital era. Our digital marketing solutions go beyond impressions and clicks — we focus on intelligent engagement that builds visibility, trust, and measurable growth.
+                </p>
+                <p class="mb-4">
+                    From AI-powered SEO and content strategies to targeted social media campaigns and performance analytics, we craft digital ecosystems that connect you with your audience effectively. Our experts turn insights into actions — ensuring every campaign not only reaches but resonates with your customers.
+                </p>
+                <p class="mb-4">
+                    With a foundation built on technology and innovation, KSN Technologies empowers your business to move from digital presence to digital dominance.
                 </p>
             </div>
         </div>
@@ -136,29 +194,24 @@ background-color: white !important;
 
         <!-- Right Image -->
         <div class="col-lg-6">
-            <img src="img/images/ds1.png" class="img-fluid rounded shadow" alt="Digital Marketing">
+            <img src="img/images/ds1.png" class="img-fluid rounded shadow desktop-image" alt="Digital Marketing">
+
         </div>
 
         <!-- Left Content -->
         <div class="col-lg-6">
-            <h3 class="text-primary mb-3">Digital Marketing Services</h3>
-            <p class="mb-4">
-                Our Digital Marketing services help businesses connect with the right audience using highly targeted 
-                online campaigns and smart growth strategies. From SEO to social media and paid ads, we ensure consistent 
-                results and long-term business success.
-            </p>
+            <h3 class="text-primary mb-3">Our Core Offerings</h3>
+            <ol class="mb-4">
+                <li><strong>AI-Driven Marketing Strategy</strong><br>We leverage predictive analytics, audience segmentation, and machine learning algorithms to design campaigns that adapt and optimize in real time. From identifying ideal customer personas to automating campaign delivery, we help you stay ahead of trends and competition.</li>
+                <li><strong>Search Engine Optimization (SEO)</strong><br>Our data-backed SEO services ensure your brand ranks where it matters most. Using AI-powered insights, we improve your website visibility, enhance keyword performance, and continuously monitor search intent to maximize organic traffic.</li>
+                <li><strong>Social Media Marketing</strong><br>We help brands establish authority and community across social platforms. Our experts design content calendars, manage campaigns, and analyze engagement metrics to strengthen your social presence with authenticity and consistency.</li>
+                <li><strong>Pay-Per-Click (PPC) and Paid Media</strong><br>From Google Ads to LinkedIn and Meta campaigns, we create ROI-focused paid media strategies. With continuous optimization powered by analytics, we ensure every dollar spent drives meaningful engagement and conversions.</li>
+                <li><strong>Content Marketing & Branding</strong><br>Our storytelling approach blends creativity with strategy. We develop compelling blogs, infographics, videos, and case studies that reflect your brand’s expertise, attract qualified leads, and build lasting credibility.</li>
+                <li><strong>Email Marketing & Automation</strong><br>We design personalized, automated email campaigns that nurture relationships and convert prospects into loyal customers — powered by AI-driven insights and user behavior analytics.</li>
+                <li><strong>Analytics & Conversion Optimization</strong><br>Our performance dashboards give you 360° visibility into campaign success. Using A/B testing, heat maps, and predictive analytics, we identify opportunities for continuous growth and increased ROI.</li>
+            </ol>
 
-            <p class="mb-4">We specialize in:</p>
-
-            <ul class="list-group list-group-flush mb-4">
-                <li class="list-group-item">Social Media Marketing (Facebook, Instagram, LinkedIn)</li>
-                <li class="list-group-item">Search Engine Optimization (Website Ranking Improvement)</li>
-                <li class="list-group-item">Google Ads & Meta Ads (High-ROI Paid Advertising)</li>
-                <li class="list-group-item">Content Marketing & Email Campaigns</li>
-                <li class="list-group-item">Brand Awareness & Lead Generation Strategies</li>
-            </ul>
-
-            <a href="#" class="btn btn-primary rounded-pill px-4">Get Started</a>
+            <a href="#" class="btn btn-primary rounded-pill px-4">Let's Redefine Digital Growth</a>
         </div>
 
     </div>
@@ -172,21 +225,16 @@ background-color: white !important;
         </div>
 
         <div class="col-lg-6">
-            <h3 class="text-primary mb-3">Why Choose Innochase for Digital Marketing?</h3>
+            <h3 class="text-primary mb-3">Why Choose KSN Technologies?</h3>
             <p class="mb-4">
-                We combine creativity, analytics, and strategy to deliver digital marketing campaigns that perform consistently. 
-                Our team ensures your brand achieves meaningful engagement, quality leads, and sustainable growth.
+                • AI-Enhanced Campaign Optimization – Smarter targeting, deeper personalization, and faster results.
+                • Full-Funnel Strategy – From awareness to conversion, we manage every digital touchpoint.
+                • Data Transparency – Real-time reporting and actionable insights.
+                • Industry Expertise – Proven success across government, enterprise, and technology sectors.
+                • Ethical and Secure Marketing – Compliant with privacy, accessibility, and data protection standards.
             </p>
 
-            <ul class="list-group list-group-flush mb-4">
-                <li class="list-group-item"><i class="fa fa-check text-primary me-2"></i>Data-driven marketing strategies</li>
-                <li class="list-group-item"><i class="fa fa-check text-primary me-2"></i>High-performing ad campaigns</li>
-                <li class="list-group-item"><i class="fa fa-check text-primary me-2"></i>Proven SEO results & ranking improvements</li>
-                <li class="list-group-item"><i class="fa fa-check text-primary me-2"></i>Creative content & branding support</li>
-                <li class="list-group-item"><i class="fa fa-check text-primary me-2"></i>Transparent reporting & weekly updates</li>
-            </ul>
-
-            <a href="#" class="btn btn-primary rounded-pill px-4">Boost Your Business</a>
+            <a href="#" class="btn btn-primary rounded-pill px-4">Let's Redefine Digital Growth</a>
         </div>
     </div>
 </div>
@@ -231,10 +279,69 @@ background-color: white !important;
     </div>
 </div>
 
+<!-- Our Digital Marketing Services -->
+<div class="container dm-services mt-5">
+
+    <div class="text-center mb-5">
+        <h3 class="text-primary mb-2">Our Digital Marketing Services</h3>
+        <p>AI-powered strategies to drive visibility, engagement, and growth.</p>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- AI Marketing Strategy -->
+        <div class="col-lg-3 col-md-6">
+            <div class="dm-service-card">
+                <div class="dm-service-icon"><i class="bi bi-bullseye"></i></div>
+                <h5 class="dm-service-title">AI-Driven Marketing Strategy</h5>
+                <p class="dm-service-text">
+                    Harness data intelligence to drive precision campaigns and performance optimization.
+                </p>
+            </div>
+        </div>
+
+        <!-- SEO -->
+        <div class="col-lg-3 col-md-6">
+            <div class="dm-service-card">
+                <div class="dm-service-icon"><i class="bi bi-bar-chart-fill"></i></div>
+                <h5 class="dm-service-title">Search Engine Optimization (SEO)</h5>
+                <p class="dm-service-text">
+                    Improve rankings with AI-powered keyword research and content optimization.
+                </p>
+            </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="col-lg-3 col-md-6">
+            <div class="dm-service-card">
+                <div class="dm-service-icon"><i class="bi bi-hand-thumbs-up"></i></div>
+                <h5 class="dm-service-title">Social Media Marketing</h5>
+                <p class="dm-service-text">
+                    Build trust and engagement through high-impact campaigns across platforms.
+                </p>
+            </div>
+        </div>
+
+        <!-- PPC -->
+        <div class="col-lg-3 col-md-6">
+            <div class="dm-service-card">
+                <div class="dm-service-icon"><i class="bi bi-cash-stack"></i></div>
+                <h5 class="dm-service-title">Pay-Per-Click Advertising (PPC)</h5>
+                <p class="dm-service-text">
+                    High-ROI paid media strategies optimized by analytics & automation.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
 <!-- CTA -->
 <div class="container text-center py-5">
-    <h2 class="mb-3">Ready to Grow Your Business Online?</h2>
-    <p class="mb-4">Let’s create a powerful digital marketing strategy that delivers real results.</p>
+    <h2 class="mb-3">Let’s Redefine Digital Growth</h2>
+    <p class="mb-4">At KSN Technologies, we don’t just market — we engineer growth through intelligent design, automation, and analytics. Whether you’re building a brand from scratch or scaling an established enterprise, our team helps you convert digital potential into measurable success.</p>
     <a href="contact.html" class="btn btn-primary rounded-pill px-5 py-2">Contact Us</a>
 </div>
 

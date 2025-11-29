@@ -29,6 +29,47 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+/* BLOG DESIGN */
+.blog-wrapper {
+    padding: 60px 0;
+    background: #f7f9ff;
+}
+.blog-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.07);
+    height: 100%;
+}
+.blog-card:hover { transform: translateY(-6px); }
+.blog-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.blog-content {
+    padding: 20px;
+}
+.blog-category {
+    font-size: 12px;
+    font-weight: 700;
+    color: #0d6efd;
+}
+.blog-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.blog-text {
+    font-size: 14px;
+    color: #555;
+}
+
+
+    </style>
 </head>
 
 <body>
@@ -95,11 +136,12 @@ background-color: white !important;
         <div class="container pt-5">
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">Who We Are</h1>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Our Blog</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
                             <li class="breadcrumb-item"><a class="text-white" href="#">
-                                We are a team of experienced professionals who have come together to provide innovative solutions in the field of AI and Machine Learning.
+                                Insights, trends, and expert knowledge from the world of AI, Full Stack Development, and Digital Marketing.
+
                                    
                             </a></li>
                         </ol>
@@ -114,108 +156,90 @@ background-color: white !important;
     <!-- Hero End -->
 
 
-    <!-- About Start -->
-   <div class="container-fluid py-5">
-    <div class="container">
-        <div class="row g-5 align-items-center">
+    
 
-            <!-- About Image -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                <div class="about-img">
-                    <img class="img-fluid" src="img/images/aboutabout1.png" alt="About Innochase">
-                </div>
-            </div>
+<!-- BLOG CONTENT -->
+<div class="container blog-wrapper">
 
-            <!-- About Content -->
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">About Us</div>
-                <h1 class="mb-4">Powering Businesses Through AI, Cyber Security & Digital Innovation</h1>
-
-                <p class="mb-4">
-                    At Innochase, we help businesses unlock the real value of technology through Artificial Intelligence, 
-                    Cyber Security, and Digital Marketing. Our goal is to empower companies with smart, secure, and scalable 
-                    digital solutions that accelerate growth and ensure long-term success.
-                </p>
-
-                <p class="mb-4">
-                    Whether you’re a startup or an established enterprise, we bring together cutting-edge technology and expert 
-                    strategy to deliver high-impact results. Our solutions are tailored to your goals, ensuring improved efficiency, 
-                    enhanced security, and stronger digital presence.
-                </p>
-
-                <div class="row g-3">
-                    <div class="col-sm-6">
-                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>AI & ML Expertise</h6>
-                        <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Cyber Security Specialists</h6>
-                    </div>
-                    <div class="col-sm-6">
-                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Digital Marketing Excellence</h6>
-                        <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>24/7 Support & Assistance</h6>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mission Section -->
-            <div class="col-md-12 mt-5">
-                <h2 class="mb-4">Our Mission</h2>
-                <p>
-                    Our mission is to enable businesses to grow confidently in a fast-changing digital world. We do this by 
-                    delivering AI solutions that simplify operations, Cyber Security tools that protect your digital assets,
-                    and Digital Marketing strategies that maximize your online reach.
-                </p>
-
-                <p>
-                    We are committed to building smart, secure, and future-ready solutions that help companies innovate, 
-                    scale, and stay ahead of competition.
-                </p>
-
-                <p>
-                    Every project we deliver is designed to improve efficiency, strengthen security, and create meaningful 
-                    digital impact for our clients.
-                </p>
-
-                <!-- Values Section -->
-                <h2 class="mt-5 mb-4">Our Values</h2>
-                <p>
-                    At Innochase, our values guide everything we build and deliver. They reflect who we are and what we 
-                    stand for as a technology partner.
-                </p>
-
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Innovation – We bring creative and modern solutions through AI and digital technology.</li>
-                    <li class="list-group-item">Security – We prioritize protection and privacy through strong Cyber Security practices.</li>
-                    <li class="list-group-item">Growth – We help businesses grow through effective Digital Marketing strategies.</li>
-                    <li class="list-group-item">Expertise – Our team includes skilled professionals in AI, Cyber Security, and Marketing.</li>
-                    <li class="list-group-item">Integrity – We believe in honesty, transparency, and long-term partnerships.</li>
-                </ul>
-
-                <!-- Additional Content -->
-                <p class="mt-4">
-                    With AI and Machine Learning, we help businesses automate tasks, analyze data, and improve decision-making.
-                    With Cyber Security, we ensure that your systems and data remain safe from threats and cyberattacks. 
-                    Through Digital Marketing, we build powerful online presence and help brands connect with the right audience.
-                </p>
-
-                <p>
-                    Our end-to-end support ensures that every solution is implemented smoothly and delivers value over time. 
-                    We work closely with you to understand your goals and design technology that fits your needs perfectly.
-                </p>
-
-                <p>
-                    From small startups to enterprise companies, we are committed to empowering organizations through intelligent 
-                    and secure digital transformation.
-                </p>
-
-                <p>
-                    At Innochase, we don’t just build technology—we build long-lasting growth and success for your business.
-                </p>
-            </div>
-
-        </div>
-    </div>
+<div class="text-center mb-4">
+<h2>Latest Articles & Ideas</h2>
+<p>Learn. Innovate. Grow.</p>
 </div>
 
-    <!-- About End -->
+<div class="row g-4">
+
+<!-- AI -->
+<div class="col-lg-4 col-md-6"><div class="blog-card">
+<img src="img/blog1.png" class="blog-img">
+<div class="blog-content">
+<span class="blog-category">ARTIFICIAL INTELLIGENCE</span>
+<h4 class="blog-title">How AI is Transforming Business</h4>
+<p class="blog-text">AI drives automation, predictive insights, and innovation.</p>
+</div></div></div>
+
+<div class="col-lg-4 col-md-6"><div class="blog-card">
+<img src="img/blog2.png" class="blog-img">
+<div class="blog-content">
+<span class="blog-category">ARTIFICIAL INTELLIGENCE</span>
+<h4 class="blog-title">Ethical AI Systems</h4>
+<p class="blog-text">Ensuring trust and responsible deployment.</p>
+</div></div></div>
+
+<div class="col-lg-4 col-md-6"><div class="blog-card">
+<img src="img/blog3.png" class="blog-img">
+<div class="blog-content">
+<span class="blog-category">ARTIFICIAL INTELLIGENCE</span>
+<h4 class="blog-title">AI & Automation</h4>
+<p class="blog-text">Automating business operations intelligently.</p>
+</div></div></div>
+
+<!-- Full Stack -->
+<div class="col-lg-4 col-md-6"><div class="blog-card">
+<img src="img/blog4.png" class="blog-img">
+<div class="blog-content">
+<span class="blog-category">FULL STACK</span>
+<h4 class="blog-title">Full Stack Development Trends</h4>
+<p class="blog-text">Modern frameworks and scalability principles.</p>
+</div></div></div>
+
+<div class="col-lg-4 col-md-6"><div class="blog-card">
+<img src="img/blog5.png" class="blog-img">
+<div class="blog-content">
+<span class="blog-category">FULL STACK</span>
+<h4 class="blog-title">Scalable Web Apps</h4>
+<p class="blog-text">Designing secure and performant systems.</p>
+</div></div></div>
+
+<!-- Digital Marketing -->
+<div class="col-lg-4 col-md-6"><div class="blog-card">
+<img src="img/blog6.png" class="blog-img">
+<div class="blog-content">
+<span class="blog-category">DIGITAL MARKETING</span>
+<h4 class="blog-title">Marketing Growth Hacks</h4>
+<p class="blog-text">Building audience and boosting sales.</p>
+</div></div></div>
+
+<div class="col-lg-4 col-md-6"><div class="blog-card">
+<img src="img/blog7.png" class="blog-img">
+<div class="blog-content">
+<span class="blog-category">DIGITAL MARKETING</span>
+<h4 class="blog-title">SEO in 2025</h4>
+<p class="blog-text">Driving organic growth in modern search.</p>
+</div></div></div>
+
+<div class="col-lg-4 col-md-6"><div class="blog-card">
+<img src="img/blog8.png" class="blog-img">
+<div class="blog-content">
+<span class="blog-category">DIGITAL MARKETING</span>
+<h4 class="blog-title">Content That Converts</h4>
+<p class="blog-text">Story-driven digital strategies.</p>
+</div></div></div>
+
+</div>
+</div>
+
+
+
 
 
     <!-- Footer Start -->
