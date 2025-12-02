@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Innochase – Accelerating Business Growth with Artificial Intelligence</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+     <link href="img/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+.inno-wrapper {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fc 0%, #e9ecef 100%);
+    min-height: 100vh;
+}
+
+.inno-section {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inno-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.inno-title {
+    font-size: 32px;
+    color: #0d2a4f;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    line-height: 1.2;
+}
+
+.inno-title::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 2px;
+}
+
+.inno-subtitle {
+    font-weight: 600;
+    color: #0d6efd;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.inno-pillar {
+    padding: 20px;
+    border-left: 5px solid #0d6efd;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f3f7ff 0%, #e7f3ff 100%);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.inno-pillar:hover {
+    background: linear-gradient(135deg, #e7f3ff 0%, #d1e7ff 100%);
+    transform: translateX(5px);
+}
+
+.inno-pillar h5 {
+    color: #0d2a4f;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.inno-pillar p {
+    color: #555;
+    margin: 0;
+}
+
+.inno-img {
+    width: 100%;
+    border-radius: 16px;
+    margin-top: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.highlight {
+    font-weight: 600;
+    color: #0d2a4f;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.training-box {
+    text-align: center;
+    padding: 30px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+    color: white;
+    box-shadow: 0 10px 30px rgba(13, 110, 253, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.training-box:hover {
+    transform: scale(1.05);
+}
+
+.training-box h3 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.training-box p {
+    color: #dbe7ff;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Team Image Size Control */
+.team-img {
+    max-height: 450px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+/* White Frame Layer Same as About Image */
+.about-img {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+    transform: translateY(-5px);
+}
+
+.about-img img {
+    border-radius: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .inno-wrapper {
+        padding: 40px 0;
+    }
+
+    .inno-section {
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+
+    .inno-title {
+        font-size: 24px;
+    }
+
+    .training-box {
+        padding: 20px;
+    }
+
+    .team-img {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .inno-section {
+        padding: 20px;
+    }
+
+    .inno-title {
+        font-size: 20px;
+    }
+
+    .inno-pillar {
+        padding: 15px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top navv">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/images/logo.png" alt="" class="logo-img">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <!-- <a href="index.html" class="nav-item nav-link">Home</a> -->
+                         <div class="nav-item dropdown">
+    <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+What we think</a>
+    <div class="dropdown-menu m-0">
+        <a href="ai-and-machine-learning.html" class="dropdown-item">AI & Machine Learning</a>
+        <a href="cyber-security.html" class="dropdown-item">Cyber Security</a>
+        <a href="digital-marketing.html" class="dropdown-item">Digital Marketing</a>
+        <a href="full-stack-development-powered-by-ai.html" class="dropdown-item">Full Stack Development Powered by AI</a>
+    </div>
+</div>
+<a href="who-we-are.html" class="nav-item nav-link">Who We Are</a>
+<a href="WhatWethink.html" class="nav-item nav-link">What we done</a>
+<a href="about-ksn.html" class="nav-item nav-link  active">About KSN</a>
+<a href="careers.html" class="nav-item nav-link">Careers</a>
+<a href="blog.html" class="nav-item nav-link">Blog</a>
+<!-- <a href="project.html" class="nav-item nav-link">Our Work</a> -->
+<a href="contact.html" class="nav-item nav-link">Contact us</a>
+</div>
+<!-- <a href="#" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Let’s Connect</a> -->
+ <div class="lang-switcher d-none d-lg-block">
+    <a href="#" class="lang-btn">
+        <i class="fas fa-globe"></i> Global (En)
+    </a>
+</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <style>
+        .navv{
+background-color: white !important;
+        }
+    </style>
+
+    <!-- Hero Start -->
+   <!-- Hero Start -->
+<div class="container-fluid pt-5 bg-primary hero-header">
+    <div class="container pt-5">
+        <div class="row g-5 pt-5">
+            <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                <h1 class="display-4 text-white mb-4 animated slideInRight">About Us</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
+                        <li class="breadcrumb-item text-white active" aria-current="page">
+                            Empowering organizations with intelligent, ethical, and future-ready technology.
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-lg-6 align-self-end text-center text-lg-end">
+                <img class="img-fluid" src="img/images/aboutabout.png" alt="" style="max-height: 300px;">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+
+
+<div class="container inno-wrapper">
+
+<!-- Intro Section -->
+<div class="row inno-section align-items-center">
+    <div class="col-lg-6">
+        <h2 class="inno-title">Innovating With Purpose</h2>
+
+        <p class="highlight">
+            At Innochase, we believe technology should empower people, simplify complexity, and inspire progress.
+        </p>
+
+        <p>
+            Founded on the principle of delivering excellence through innovation, we help organizations harness the 
+            transformative power of Artificial Intelligence, Cloud Computing, Cybersecurity, and Automation. Our mission 
+            is simple yet powerful — to build intelligent, secure, and sustainable digital ecosystems that create 
+            lasting value for our clients and communities.
+        </p>
+
+        <p>
+            Our multidisciplinary teams collaborate globally to deliver solutions that are efficient, secure, ethical, 
+            and sustainable — turning complexity into clarity and innovation into measurable growth.
+        </p>
+    </div>
+
+    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="about-img">
+            <img class="img-fluid" src="img/images/aboutabout1.png" alt="About Innochase">
+        </div>
+    </div>
+</div>
+
+
+<!-- Driven By Expertise -->
+<div class="inno-section">
+    <h2 class="inno-title">Driven by Expertise and Collaboration</h2>
+
+    <p>
+        Our strength lies in our people — a diverse team of technologists, data scientists, engineers, and 
+        strategists united by a shared vision to make technology human-centered. 
+    </p>
+
+    <p>
+        We collaborate closely with enterprises, startups, and government agencies to design tailored solutions 
+        that deliver real-world outcomes. Whether developing AI models, automating workflows, or enhancing 
+        intelligent decision systems, our approach blends strategic innovation with practical execution for 
+        measurable, long-term success.
+    </p>
+</div>
+
+
+
+
+
+<!-- Why It Matters -->
+<div class="inno-section">
+    <h2 class="inno-title">Why It Matters</h2>
+    <p>
+        AI-driven businesses are shaping the next era of innovation — but innovation must be secure.  
+        Our AI Defense Framework ensures organizations operate confidently in an automated world where ethics, 
+        transparency, and resilience define long-term success.
+    </p>
+</div>
+
+
+<!-- Building the Future -->
+<div class="inno-section">
+    <h2 class="inno-title">Building the Future, Responsibly</h2>
+
+    <p>
+        As intelligent systems and automation continue to evolve, we are committed to building technology that is 
+        ethical, transparent, and trustworthy. At the intersection of purpose and innovation, Innochase helps 
+        organizations adapt, evolve, and lead with confidence.
+    </p>
+
+    <img src="img/knsteam.jpeg" class="img-fluid team-img" alt="Innochase Team">
+
+    <p>
+        Together, we are shaping a future where technology not only solves problems but also advances humanity.
+    </p>
+</div>
+
+
+<!-- Mission & Vision -->
+<div class="row inno-section">
+    <div class="col-md-6">
+        <h2 class="inno-title">Our Mission</h2>
+        <p>
+            To empower organizations with intelligent, ethical, and scalable AI solutions that transform data into 
+            decisions and innovation into meaningful impact.
+        </p>
+    </div>
+
+    <div class="col-md-6">
+        <h2 class="inno-title">Our Vision</h2>
+        <p>
+            To be a global leader in AI innovation, transforming how businesses and communities operate through 
+            intelligent automation and human-centered design.
+        </p>
+    </div>
+</div>
+
+
+<!-- Promise -->
+<div class="inno-section">
+    <h2 class="inno-title">Our Promise</h2>
+    <p>
+        At Innochase, we go beyond technology — we design intelligence that serves humanity.  
+        Through creativity, collaboration, and innovation, we create AI that works *with* people to build a smarter, 
+        more connected, and more equitable future.
+    </p>
+</div>
+
+
+<!-- Training -->
+<div class="training-box">
+    <h3>Training Program</h3>
+    <p>Artificial Intelligence Training Program</p>
+</div>
+
+</div>
+
+
+
+
+    
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+    <div class="container py-5">
+        <div class="row g-5">
+
+            <!-- Brand & About -->
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                <a href="index.html" class="d-inline-block mb-3">
+                    <h1 class="text-white">Innochase<span class="text-primary">-</span>AI</h1>
+                </a>
+                <p class="mb-0">
+                    We empower businesses with next-generation AI solutions that enhance efficiency,
+                    boost productivity, and drive innovation. From automation to predictive analytics,
+                    we help your business stay ahead in the digital era.
+                </p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                <h5 class="text-white mb-4">Get In Touch</h5>
+                <p><i class="fa fa-map-marker-alt me-3"></i>364 Indian Boundary Road, Suite A, Chesterton IN 46304</p>
+                <p><i class="fa fa-phone-alt me-3"></i>(219) 864-9810</p>
+                <p><i class="fa fa-envelope me-3"></i>support@innochase.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                <h5 class="text-white mb-4">Quick Links</h5>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="">Contact Us</a>
+                <a class="btn btn-link" href="">Privacy Policy</a>
+                <a class="btn btn-link" href="">Terms & Conditions</a>
+                <a class="btn btn-link" href="">Careers</a>
+            </div>
+
+            <!-- Services Links -->
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                <h5 class="text-white mb-4">Our Services</h5>
+                <a class="btn btn-link" href="">Robotic Automation</a>
+                <a class="btn btn-link" href="">Machine Learning</a>
+                <a class="btn btn-link" href="">Predictive Analytics</a>
+                <a class="btn btn-link" href="">Data Science</a>
+                <a class="btn btn-link" href="">AI Consulting</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="container wow fadeIn" data-wow-delay="0.1s">
+        <div class="copyright">
+            <div class="row">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Innochase.com</a>, All Rights Reserved.
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="">Home</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FAQs</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+    <a href="https://wa.me/12198649810" target="_blank" class="btn btn-lg btn-lg-square back-to-robo pt-2">
+        <img src="img/robo-small.png" alt="">
+    </a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
