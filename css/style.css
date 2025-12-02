@@ -593,3 +593,16 @@ body {
     .VIpgJd-yAWNEb-L7lbkb{
         display: none;
     }
+    @media(max-width:992px){
+        .logo-img{
+            width:120px;
+        }
+        .lang-btn{
+            padding: 6px 10px;
+            font-size: 12px;
+        }
+        .navbar-toggler-icon{
+            width:1.1em;
+            height:1.1em;
+        }
+    }
