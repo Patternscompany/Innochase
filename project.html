@@ -82,8 +82,9 @@
     </button>
 
     <ul class="lang-menu" id="langMenu">
-        <li><a href="#" data-lang="EN">English</a></li>
-        <li><a href="#" data-lang="HI">Hindi</a></li>
+        <li><a href="#" data-lang="en">English</a></li>
+        <li><a href="#" data-lang="hi">Hindi</a></li>
+        <li><a href="#" data-lang="te">Telugu</a></li>
     </ul>
 </div>
             </nav>
@@ -351,6 +352,23 @@ background-color: white !important;
      <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+<div id="google_translate_element" style="display:none;visibility: hidden;"></div>
+
+   
+    <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'en,hi,te',
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
 </body>
+
 
 </html>
