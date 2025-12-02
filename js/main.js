@@ -55,3 +55,38 @@
     
 })(jQuery);
 
+    const langBtn = document.getElementById("langDropdownBtn");
+    const langMenu = document.getElementById("langMenu");
+    const selectedLang = document.getElementById("selectedLang");
+
+    // Toggle dropdown
+    langBtn.addEventListener("click", () => {
+        langMenu.style.display = langMenu.style.display === "block" ? "none" : "block";
+    });
+
+    // Update selected language
+    langMenu.querySelectorAll("a").forEach(option => {
+        option.addEventListener("click", function(e) {
+            e.preventDefault();
+
+            const lang = this.getAttribute("data-lang");
+
+            selectedLang.innerText = lang;
+
+            // Close dropdown
+            langMenu.style.display = "none";
+
+            // Move selected to top
+            langMenu.insertBefore(this.parentElement, langMenu.firstChild);
+        });
+    });
+
+    // Close when clicking outside
+    document.addEventListener("click", function(e) {
+        if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+            langMenu.style.display = "none";
+        }
+    });
+
+
+

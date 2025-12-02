@@ -74,14 +74,24 @@
 
 <a href="contact.html" class="nav-item nav-link">Contact us</a>
 </div>
-<div class="lang-switcher d-none d-lg-block">
-    <a href="#" class="lang-btn">
-        <i class="fas fa-globe"></i> Global (En)
-    </a>
-</div>
+<!-- Language Switcher -->
+
+
+
 
 
                 </div>
+                <div class="lang-switcher">
+    <button class="lang-btn" id="langDropdownBtn">
+        <i class="fas fa-globe"></i> <span id="selectedLang">EN</span>
+        <i class="fas fa-chevron-down ms-2"></i>
+    </button>
+
+    <ul class="lang-menu" id="langMenu">
+        <li><a href="#" data-lang="EN">English</a></li>
+        <li><a href="#" data-lang="HI">Hindi</a></li>
+    </ul>
+</div>
             </nav>
         </div>
     </div>
