@@ -72,7 +72,7 @@
             const lang = this.getAttribute("data-lang");
 
             selectedLang.innerText = lang;
-
+localStorage.setItem("preferredLanguage", lang);
             // Close dropdown
             langMenu.style.display = "none";
 
