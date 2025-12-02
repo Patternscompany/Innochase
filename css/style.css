@@ -528,7 +528,9 @@ color:white !important;
     display: flex;
     align-items: center;
 }
-
+.lang-btn .fa-globe{
+    margin-right: 5px;
+}
 .lang-menu {
     position: absolute;
     top: 110%;
