@@ -250,12 +250,36 @@ color:white !important;
 .service-item {
     position: relative;
     padding: 45px 30px;
-    background: #FFFFFF;
-    transition: .5s;
+    /* background: linear-gradient(45deg, #00f2fe, #4facfe, #7000ff); */
+    background: var(--primary);
+    color: white;
+    border-radius: 35% 45% 40% 50%;
+    z-index: 1;
+}
+
+.service-item::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    background: radial-gradient(circle,
+        rgba(255,255,255,0.25),
+        transparent 65%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+
+
+.service-item:hover::before {
+    opacity: 1;
 }
 
 .service-item:hover {
-    background: var(--primary);
+    
 }
 
 .service-item .service-icon {
@@ -280,11 +304,15 @@ color:white !important;
 .service-item:hover p {
     color: #FFFFFF;
 }
+.service-item h5,
+.service-item p {
+    color: #FFFFFF;
+}
 
 .service-item a.btn {
     position: relative;
     display: flex;
-    color: var(--primary);
+    color: var(--white);
     transition: .5s;
     z-index: 1;
 }
@@ -301,14 +329,16 @@ color:white !important;
     top: 0;
     left: 0;
     border-radius: 35px;
-    background: var(--light);
+    background: var(--primary);
     transition: .5s;
     z-index: -1;
+   
 }
 
 .service-item:hover a.btn::before {
     width: 100%;
     background: var(--light);
+    display: flex;
 }
 
 
@@ -588,6 +618,7 @@ iframe.goog-te-banner-frame {
 /* Adjust body position after hiding bar */
 body {
     top: 0px !important;
+    /* background: linear-gradient( #1f275b, #6a5af9); */
 }
  .VIpgJd-ZVi9od-ORHb-OEVmcd{
         display: none;
