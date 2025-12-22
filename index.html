@@ -30,6 +30,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -104,7 +105,7 @@
 </style>
     <!-- Hero Start -->
    <!-- Hero Section with Video -->
-<div class="container-fluid p-0 position-relative">
+<div class="container-fluid p-0 position-relative hero-ai">
 
     <!-- Background Video -->
     <!-- <video autoplay muted loop playsinline class="w-100" style="height: 100vh; object-fit: cover;">
@@ -114,15 +115,21 @@
     <!-- Overlay -->
     <!-- <div class="position-absolute top-0 start-0 w-100 h-100" 
          ></div> -->
+         <div class="ai-globes">
+    <span class="globe g1"></span>
+    <span class="globe g2"></span>
+    <span class="globe g3"></span>
+    <span class="globe g4"></span>
+</div>
 
-   <div class="container pt-5">
-            <div class="row g-5 pt-5">
+   <div class="container pt-3">
+            <div class="row g-5 pt-3">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <div class="btn btn-sm border rounded-pill text-dark px-3 mb-3 animated slideInRight">Innochase AI</div>
-                    <h1 class="display-4 text-dark mb-4 animated slideInRight">Transform Your Business with Next-Gen AI Solutions</h1>
-                    <p class="text-dark mb-4 animated slideInRight">From automation to predictive analytics, we build smart technologies that help companies work faster, smarter, and more efficiently. Future-ready innovation starts here.</p>
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated slideInRight">Innochase AI</div>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Transform Your Business with Next-Gen AI Solutions</h1>
+                    <p class="text-white mb-4 animated slideInRight">From automation to predictive analytics, we build smart technologies that help companies work faster, smarter, and more efficiently. Future-ready innovation starts here.</p>
                     <a href="service.html" class="btn btn-primary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Explore Solutions</a>
-                    <a href="contact.html" class="btn text-dark btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Get in Touch</a>
+                    <a href="contact.html" class="btn text-white btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Get in Touch</a>
                 </div>
                 <div class="col-lg-6 align-self-end text-center text-lg-end">
                     <img class="img-fluid" src="img/images/homehero1.png" alt="">
@@ -133,6 +140,93 @@
 
     <!-- Hero End -->
 
+<style>
+   
+.hero-ai {
+    background: radial-gradient(circle at top left, #0b1d26, #050b12);
+    overflow: hidden;
+}
+
+/* Globe container */
+.ai-globes {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Base globe style */
+.globe {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%,
+        rgba(0, 255, 255, 0.35),
+        rgba(0, 255, 255, 0.1),
+        transparent 70%);
+    filter: blur(2px);
+    animation: floatOrb 12s ease-in-out infinite alternate;
+}
+
+/* Individual globes */
+.g1 {
+    width: 320px;
+    height: 320px;
+    top: 10%;
+    left: 5%;
+}
+
+.g2 {
+    width: 220px;
+    height: 220px;
+    bottom: 15%;
+    left: 25%;
+    animation-delay: 2s;
+}
+
+.g3 {
+    width: 420px;
+    height: 420px;
+    top: 20%;
+    right: 10%;
+    background: radial-gradient(circle at 30% 30%,
+        rgba(0, 140, 255, 0.35),
+        rgba(0, 140, 255, 0.1),
+        transparent 70%);
+    animation-delay: 4s;
+}
+
+.g4 {
+    width: 160px;
+    height: 160px;
+    bottom: 10%;
+    right: 35%;
+    animation-delay: 6s;
+}
+
+/* Animation */
+@keyframes floatOrb {
+    0% {
+        transform: translateY(0) translateX(0) scale(1);
+    }
+    100% {
+        transform: translateY(-40px) translateX(30px) scale(1.05);
+    }
+}
+
+/* Keep hero content above globes */
+.hero-ai > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    .g3, .g4 {
+        display: none;
+    }
+}
+
+</style>
 
     <!-- About Start -->
     <div class="container-fluid py-5">
@@ -178,14 +272,6 @@
                 <i class="fa fa-check text-primary me-2"></i>Reliable & Transparent Service
             </h6>
         </div>
-    </div>
-
-    <div class="d-flex align-items-center mt-4">
-        <a class="btn btn-primary rounded-pill px-4 me-3 read-more" href="about-innochase.html">Read More</a>
-        <a class="btn btn-outline-primary btn-square me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-        <a class="btn btn-outline-primary btn-square me-3" href="#"><i class="fab fa-twitter"></i></a>
-        <a class="btn btn-outline-primary btn-square me-3" href="#"><i class="fab fa-instagram"></i></a>
-        <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-linkedin-in"></i></a>
     </div>
 </div>
 
@@ -680,7 +766,7 @@
                 <p><i class="fa fa-phone-alt me-3"></i>(219) 864-9810</p>
                 <p><i class="fa fa-envelope me-3"></i>support@innochase.com</p>
                 <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-x-twitter"></i></a>
                     <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
                     <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -721,10 +807,10 @@
 
                 <div class="col-md-6 text-center text-md-end">
                     <div class="footer-menu">
-                        <a href="">Home</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help</a>
-                        <a href="">FAQs</a>
+                        <a href="#">Home</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">Help</a>
+                        <a href="#">FAQs</a>
                     </div>
                 </div>
 
