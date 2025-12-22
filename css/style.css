@@ -514,19 +514,22 @@ color:white !important;
 
 .lang-switcher {
     position: relative;
-    display: inline-block;
+    display: flex;
+    background: linear-gradient(135deg, #1f275b, #6a5af9) !important;
+    border-radius: 50rem;
 }
 
 .lang-btn {
-    background: #1f275b;
     color: #fff;
-    padding: 8px 14px;
-    border-radius: 3px;
+    padding: 8px 16px;
+    /* border-radius: 3px; */
     border: none;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     align-items: center;
+    background: none;
+    background-color: none;
 }
 .lang-btn .fa-globe{
     margin-right: 5px;
@@ -535,8 +538,7 @@ color:white !important;
     position: absolute;
     top: 110%;
     right: 0;
-    background: #fff;
-    border-radius: 1px;
+    /* border-radius: 1px; */
     width: 160px;
     list-style: none;
     padding: 0;
@@ -608,4 +610,8 @@ body {
         .read-more{
             font-size: 0.9rem;
         }
+    }
+    .contact-uss{
+        color: #fff;
+        /* border-radius: 10px; */
     }
