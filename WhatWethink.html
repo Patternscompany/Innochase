@@ -131,8 +131,8 @@ background-color: white !important;
 
 
     <!-- ================= AI & MACHINE LEARNING ================= -->
-<div class="container-fluid py-5">
-  <div class="container">
+<div class="container-fluid py-5 cyber-section">
+  <div class="container cyber-wrapper">
     <div class="row align-items-center">
       <div class="col-md-12 py-4">
         <p><strong> <h2 class="text-primary mb-3 text-center">Artificial Intelligence & Machine Learning</h2></strong></p>
@@ -263,38 +263,153 @@ background-color: white !important;
     </ul>
       </div>
       </div>
-      <div class="row align-items-center py-4">
-      <div class="col-md-4">
-    <h4 class="text-primary">Our AI Approach</h4>
-    <ol>
-      <li>Discover</li>
-      <li>Design</li>
-      <li>Develop</li>
-      <li>Deliver</li>
-      <li>Govern</li>
-    </ol>
+      <div class="row align-items-center py-5 approach-section">
 
-</div>
-      <div class="col-md-4">
-    <h4 class="text-primary">Why Innochase</h4>
-    <ul>
-      <li>AI-first philosophy</li>
-      <li>Cross-industry experience</li>
-      <li>Research-driven teams</li>
-      <li>Secure & ethical AI practices</li>
-      <li>Scalable results</li>
+  <div class="col-lg-12 approach-card">
+
+    <h3 class="section-titl">Our Approach</h3>
+    <p class="section-subtitle">
+      We partner with organizations to create intelligent ecosystems that evolve continuously.
+    </p>
+
+    <ul class="approach-list">
+      <li><span>01</span> Discover: Identify high-impact use cases and define success metrics.</li>
+      <li><span>02</span> Design: Architect AI-driven solutions that integrate with existing systems.</li>
+      <li><span>03</span> Develop: Build, train, and deploy models that deliver measurable outcomes.</li>
+      <li><span>04</span> Deliver: Operationalize AI with automation and continuous learning.</li>
+      <li><span>05</span> Govern: Monitor, audit, and improve models responsibly.</li>
     </ul>
-    </div>
-    </div>
+
+    <hr class="approach-divider">
+
+    <h3 class="section-titl mt-4">Why Innochase</h3>
+
+    <ul class="why-list">
+      <li><i class="fa fa-globe"></i> AI-First Philosophy — Every solution is intelligence-driven.</li>
+      <li><i class="fa fa-chart-bar"></i> Cross-Industry Expertise — Healthcare, finance, enterprise & government.</li>
+      <li><i class="fa fa-users"></i> Research-Driven Team — Always ahead of AI innovation.</li>
+      <li><i class="fa fa-lock"></i> Responsible AI — Ethics, privacy, and security by design.</li>
+      <li><i class="fa fa-chart-line"></i> Scalable Results — Faster decisions, lower costs, smarter operations.</li>
+    </ul>
+
+  </div>
+
+</div>
+
   </div>
   </div>
 </div>
 
+<style>
+  /* Section wrapper */
+.approach-section {
+    background: linear-gradient(180deg, #f9fbff, #ffffff);
+}
 
+/* Main card */
+.approach-card {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 18px;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle AI glow */
+.approach-card::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 260px;
+    height: 260px;
+    background: radial-gradient(circle, rgba(79,172,254,0.25), transparent 70%);
+    border-radius: 50%;
+}
+
+/* Titles */
+
+
+/* Approach steps */
+.approach-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+.approach-list li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #f8faff;
+    padding: 14px 18px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.approach-list li span {
+    min-width: 38px;
+    height: 38px;
+    background: linear-gradient(135deg, #4facfe, #7000ff);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.approach-list li:hover {
+    transform: translateX(6px);
+    box-shadow: 0 10px 20px rgba(79,172,254,0.2);
+}
+
+/* Divider */
+.approach-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #4facfe, transparent);
+    margin: 40px 0;
+}
+
+/* Why list */
+.why-list {
+    list-style: none;
+    padding: 0;
+}
+
+.why-list li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 0;
+    font-size: 15px;
+    color: #333;
+}
+
+.why-list i {
+    color: #4facfe;
+    font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .approach-card {
+        padding: 30px 20px;
+    }
+
+ 
+}
+
+</style>
 
 <!-- ================= CYBER SECURITY ================= -->
-<div class="container-fluid py-5 bg-light">
-  <div class="container">
+<div class="container-fluid py-5 bg-light cyber-section">
+  <div class="container cyber-wrapper">
 <div class="row align-items-center py-4">
 
 <div class="col-md-6">
@@ -344,6 +459,14 @@ background-color: white !important;
     </ul>
 </div>
 <div class="col-md-6">
+    <img src="img/ds7.png" class="img-fluid rounded mb-3" alt="Security Architecture">
+</div>
+</div>
+<div class="row align-items-center py-4">
+  <div class="col-md-6">
+    <img src="img/ds7.png" class="img-fluid rounded mb-3" alt="Security Architecture">
+</div>
+<div class="col-md-6">
     <!-- 3 -->
     <h4>3. Compliance & Risk Management</h4>
     <!-- <img src="img/compliance.jpg" class="img-fluid rounded mb-3" alt="Compliance"> -->
@@ -355,6 +478,9 @@ background-color: white !important;
       <li>Policy management</li>
     </ul>
 </div>
+</div>
+
+<div class="row align-items-center py-4">
 <div class="col-md-6">
     <!-- 4 -->
     <h4>4. Identity, Access & Data Security</h4>
@@ -368,6 +494,15 @@ background-color: white !important;
     </ul>
 </div>
 <div class="col-md-6">
+    <img src="img/ds7.png" class="img-fluid rounded mb-3" alt="Security Architecture">
+</div>
+</div>
+
+<div class="row align-items-center py-4">
+<div class="col-md-6">
+    <img src="img/ds7.png" class="img-fluid rounded mb-3" alt="Security Architecture">
+</div>
+<div class="col-md-6">
     <!-- 5 -->
     <h4>5. Security Awareness & Governance</h4>
     <!-- <img src="img/awareness.jpg" class="img-fluid rounded mb-3" alt="Security Training"> -->
@@ -379,6 +514,12 @@ background-color: white !important;
       <li>Behavior analytics</li>
     </ul>
 </div>
+
+</div>
+
+
+
+
 <div class="col-md-6">
     <h4>Our Approach</h4>
     <ol>
@@ -395,13 +536,140 @@ background-color: white !important;
 
      </div>
   </div>
-</div>
+
 
 <style>
   .row.align-items-center.py-4{
  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
  margin-bottom: 1rem;
   }
+
+
+  /* ===============================
+   CYBER SECURITY SECTION STYLES
+================================ */
+
+.cyber-section {
+    background: linear-gradient(180deg, #f7f9ff, #ffffff);
+}
+
+/* Main wrapper */
+.cyber-wrapper {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 60px 40px;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle AI glow */
+.cyber-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(79,172,254,0.25), transparent 70%);
+    border-radius: 50%;
+}
+
+/* Headings */
+.cyber-wrapper h2 {
+    font-weight: 700;
+    font-size: 34px;
+    color: #1f275b;
+}
+
+.cyber-wrapper h4 {
+    font-weight: 600;
+    color: #1f275b;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.cyber-wrapper p {
+    color: #555;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* Images */
+.cyber-wrapper img {
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    transition: transform 0.4s ease;
+}
+
+.cyber-wrapper img:hover {
+    transform: scale(1.03);
+}
+
+/* Feature lists */
+.cyber-wrapper ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cyber-wrapper ul li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Check icon bullet */
+.cyber-wrapper ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #1f275b;
+    font-weight: 600;
+}
+
+/* Numbered approach list */
+.cyber-wrapper ol {
+    padding-left: 20px;
+}
+
+.cyber-wrapper ol li {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Section spacing */
+.cyber-wrapper .row {
+    margin-bottom: 30px;
+}
+
+/* Quote highlight */
+.cyber-wrapper p strong {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #1f275b;
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cyber-wrapper {
+        padding: 35px 20px;
+    }
+
+    .cyber-wrapper h2 {
+        font-size: 26px;
+    }
+
+    .cyber-wrapper img {
+        margin-bottom: 20px;
+    }
+}
+
 </style>
 
 <!-- ================= TRAINING ================= -->
@@ -484,21 +752,20 @@ background-color: white !important;
             <!-- Quick Links -->
             <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                 <h5 class="text-white mb-4">Quick Links</h5>
-                <a class="btn btn-link" href="">About Us</a>
-                <a class="btn btn-link" href="">Contact Us</a>
-                <a class="btn btn-link" href="">Privacy Policy</a>
-                <a class="btn btn-link" href="">Terms & Conditions</a>
-                <a class="btn btn-link" href="">Careers</a>
+                <a class="btn btn-link" href="about-innochase.html">About Us</a>
+                <a class="btn btn-link" href="contact.html">Contact Us</a>
+                <a class="btn btn-link" href="privacy-policy.html">Privacy Policy</a>
+                <a class="btn btn-link" href="terms-and-conditions.html">Terms & Conditions</a>
+                <a class="btn btn-link" href="careers.html">Careers</a>
             </div>
 
             <!-- Services Links -->
             <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                <h5 class="text-white mb-4">Our Services</h5>
-                <a class="btn btn-link" href="">Robotic Automation</a>
-                <a class="btn btn-link" href="">Machine Learning</a>
-                <a class="btn btn-link" href="">Predictive Analytics</a>
-                <a class="btn btn-link" href="">Data Science</a>
-                <a class="btn btn-link" href="">AI Consulting</a>
+                <h5 class="text-white mb-4">What We Do</h5>
+                <a class="btn btn-link" href="ai-and-machine-learning.html">Ai and Machine Learning</a>
+                <a class="btn btn-link" href="cyber-security.html">Cybersecurity and Compliance</a>
+                <a class="btn btn-link" href="digital-marketing.html">Digital Transformation</a>
+                <a class="btn btn-link" href="full-stack-development-powered-by-ai.html">Full Stack Development</a>
             </div>
 
         </div>
@@ -515,10 +782,8 @@ background-color: white !important;
 
                 <div class="col-md-6 text-center text-md-end">
                     <div class="footer-menu">
-                        <a href="#">Home</a>
-                        <a href="#">Cookies</a>
-                        <a href="#">Help</a>
-                        <a href="#">FAQs</a>
+                        <a href="contact.html">Help</a>
+                        <a href="index.html">FAQs</a>
                     </div>
                 </div>
 
