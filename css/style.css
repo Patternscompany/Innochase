@@ -576,6 +576,7 @@ color:white !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     display: none;
     z-index: 999;
+    background:white;
 }
 
 .lang-menu li a {
