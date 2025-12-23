@@ -37,10 +37,12 @@
 }
 
 /* Robot Image */
-.back-to-robo img {
-    width: 50px;
-    height: 50px;
-
+.back-to-robo i {
+    font-size: 2rem;
+    padding:4px 8px;
+    color: white;
+    border-radius: 50px;
+background: linear-gradient( #1f275b, #6a5af9) !important;
     /* entry animation + continuous jump */
     animation: 
         popIn 0.5s ease-out forwards,
